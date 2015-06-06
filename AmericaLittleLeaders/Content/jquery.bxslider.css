@@ -175,7 +175,7 @@
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-	text-align: left;
+	text-align: center;
 	width: 80%;
 }
 

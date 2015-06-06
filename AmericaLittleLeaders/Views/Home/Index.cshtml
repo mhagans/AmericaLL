@@ -3,7 +3,22 @@
 }
 
 <div class="jumbotron">
-    
+    <ul class="bxslider">
+        @foreach (var image in Model.ImagesList)
+        {
+            <li><img src = "@Url.Content("~/Images/contentSlider/" + image)" title = "@image"; height="400px"; width="800px" /></li>
+        }
+    </ul>
+    <script type="text/javascript">
+        $('.bxslider').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto: true,
+                autoControls: true,
+                responsive: true
+        });
+        
+    </script>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     
 </div>

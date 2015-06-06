@@ -6,7 +6,7 @@ using System.IO;
 
 namespace AmericaLittleLeaders.Models
 {
-    public class ContentSilderViewModel
+    public class ContentSliderViewModel
     {
         public FileInfo[] ImagesList { get; set; }
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AmericaLittleLeaders.Models;
 
 namespace AmericaLittleLeaders.Controllers
 {
@@ -16,6 +17,7 @@ namespace AmericaLittleLeaders.Controllers
             {
                 ImagesList = new System.IO.DirectoryInfo(Server.MapPath("~/Images/contentSlider/")).GetFiles()
             };
+           
             return View(model);
         }
 
