@@ -16,7 +16,7 @@ namespace AmericaLittleLeaders.Controllers
            
             ContentSliderViewModel images = new ContentSliderViewModel()
             {
-                ImagesList = new System.IO.DirectoryInfo(Server.MapPath("~/Images/contentSlider/")).GetFiles()
+                ImagesList = new System.IO.DirectoryInfo(Server.MapPath("~/Content/images/contentSlider/")).GetFiles()
             };
 
             

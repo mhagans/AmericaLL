@@ -181,10 +181,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\contentSlider\bookreport.jpg" />
-    <Content Include="Images\logo-1.png" />
-    <Content Include="Images\contentSlider\Owl.jpg" />
-    <Content Include="Images\contentSlider\reptileguy.jpg" />
+    <Content Include="Content\images\contentSlider\bookreport.jpg" />
+    <Content Include="Content\images\logo-1.png" />
+    <Content Include="Content\images\contentSlider\Owl.jpg" />
+    <Content Include="Content\images\contentSlider\reptileguy.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\Documents\ALL-Employment-Application.pdf" />
@@ -234,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
     <Folder Include="Views\Files\" />
     <Folder Include="Views\File\" />
   </ItemGroup>
