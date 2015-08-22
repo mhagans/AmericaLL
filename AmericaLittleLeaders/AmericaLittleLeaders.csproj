@@ -164,6 +164,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FileViewModel.cs" />
     <Compile Include="Models\ContentSliderViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -171,7 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\bx_loader.gif" />
+    <Content Include="Content\images\controls.png" />
     <Content Include="Content\jquery.bxslider.css" />
     <Content Include="Scripts\jquery.bxslider.js" />
     <Content Include="Scripts\jquery.bxslider.min.js" />
@@ -185,6 +187,8 @@
     <Content Include="Images\contentSlider\reptileguy.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Documents\ALL-Employment-Application.pdf" />
+    <Content Include="Content\Documents\Parent-Student-Handbook1-2014.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -230,6 +234,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Files\" />
+    <Folder Include="Views\File\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

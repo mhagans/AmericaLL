@@ -1,10 +1,10 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+@model AmericaLittleLeaders.Models.ContainerModel
 <div class="jumbotron">
     <ul class="bxslider">
-        @foreach (var image in Model.ImagesList)
+        @foreach (var image in Model.images.ImagesList)
         {
             <li><img src = "@Url.Content("~/Images/contentSlider/" + image)" title = "@image"; height="400px"; width="800px" /></li>
         }
@@ -19,28 +19,37 @@
         });
         
     </script>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>About ALL</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            @Html.ActionLink("Directors Welcome", "About", "Home")
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>ALL Resources</h2>
+        <ul>
+            @foreach (var fileName in Model.files.fileList)
+            { 
+                <li>
+                    <a href="~/Content/Documents/@fileName">@fileName</a>
+                </li>
+            }
+        </ul>
+ 
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>America Little Leaders</h2>
+        <p>1527 Gandy St<br />
+           Jacksonville, Florida 32208<br />
+           Office: 904-240-1864<br />
+           Fax: 904-240-1865<br />
+           Email: Americasleaders2@gmail.com
+        </p>
+        
     </div>
 </div>

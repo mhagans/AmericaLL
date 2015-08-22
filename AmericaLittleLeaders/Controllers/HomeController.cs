@@ -13,11 +13,17 @@ namespace AmericaLittleLeaders.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "America Little Leaders";
-            ContentSliderViewModel model = new ContentSliderViewModel()
+           
+            ContentSliderViewModel images = new ContentSliderViewModel()
             {
                 ImagesList = new System.IO.DirectoryInfo(Server.MapPath("~/Images/contentSlider/")).GetFiles()
             };
-           
+
+            
+            var model = new ContainerModel();
+            model.files = FileViewModel.ListFiles();
+            model.images = images;
+         
             return View(model);
         }
 
@@ -34,5 +40,7 @@ namespace AmericaLittleLeaders.Controllers
 
             return View();
         }
+
+        
     }
 }

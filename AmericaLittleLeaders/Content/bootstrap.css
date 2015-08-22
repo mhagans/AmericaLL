@@ -860,6 +860,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  color: black;
 }
 
 .col-xs-1,
@@ -4934,8 +4935,8 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
-  background-color: #eeeeee;
+  background-color: #7f0022;
+ 
 }
 
 .jumbotron h1 {
@@ -4955,10 +4956,12 @@ a.list-group-item.active > .badge,
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
+    
   }
   .container .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
+    
   }
   .jumbotron h1 {
     font-size: 63px;
